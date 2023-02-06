@@ -16,11 +16,11 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.MigrateDatabase<OrderContext>((context, services) =>
-{
-    var logger=services.GetRequiredService<ILogger<OrderContextSeed>>();
-    OrderContextSeed.SeedAsync(context, logger).Wait();
-});
+//app.MigrateDatabase<OrderContext>((context, services) =>
+//{
+//    var logger=services.GetRequiredService<ILogger<OrderContextSeed>>();
+//    OrderContextSeed.SeedAsync(context, logger).Wait();
+//});
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
