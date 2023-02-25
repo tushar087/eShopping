@@ -7,10 +7,13 @@ This is an e-commerce microservices project with different microservice for dife
 - Discount
 - Ordering
 
-Each microservice is using other own database including SQL Server , PostGRESQL, Redis and MongoDB and is containerized using docker so that it can be easily deployable on any other system.
+Each microservice is using other own database including SQL Server , PostgreSQL, Redis and MongoDB and is containerized using docker so that it can be easily deployable on any other system.
 
 ### Technology Used
  - ASP.NET Core
  - C#
  - Docker
- -  Relational and Non-Relational Database
+ - Relational and Non-Relational Database
+  
+ 
+# Note : Ongoing Project , further changes will be pushed as proceed ahead. 
