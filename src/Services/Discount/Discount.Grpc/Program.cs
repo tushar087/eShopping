@@ -18,9 +18,9 @@ builder.Services.AddGrpc();
 
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(5003, o => o.Protocols = HttpProtocols.Http2);
-    options.Listen(IPAddress.Any, 80, o => o.Protocols = HttpProtocols.Http2);
-    options.Listen(IPAddress.Any, 5003, o => o.Protocols = HttpProtocols.Http2);
+    options.ListenAnyIP(8003, listenOptions => listenOptions.Protocols = HttpProtocols.Http2);
+    options.Listen(IPAddress.Any, 80, listenOptions => listenOptions.Protocols = HttpProtocols.Http2);
+    options.Listen(IPAddress.Any, 5003, listenOptions => listenOptions.Protocols = HttpProtocols.Http2);
 });
 
 var app = builder.Build();
