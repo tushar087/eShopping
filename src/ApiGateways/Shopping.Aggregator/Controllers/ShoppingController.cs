@@ -1,9 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Shopping.Aggregator.Models;
 using Shopping.Aggregator.Services;
 using System.Net;
-using System.Security.Cryptography.Xml;
 
 namespace Shopping.Aggregator.Controllers
 {
