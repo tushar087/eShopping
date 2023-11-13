@@ -13,6 +13,9 @@ services:
   pgadmin:
       image: dpage/pgadmin4
 
+  portainer:
+      image: portainer/portainer-ce
+
   orderdb:
       image: mcr.microsoft.com/mssql/server:2022-latest
 
@@ -55,10 +58,17 @@ services:
       context: .
       dockerfile: ApiGateways/OcelotApiGateway/Dockerfile
 
+  shopping.aggregator:
+    image: ${DOCKER_REGISTRY-}shoppingaggregator
+    build:
+      context: .
+      dockerfile: ApiGateways/Shopping.Aggregator/Dockerfile
+
 volumes:
   mongo_data:
   postgres_data:
   pgadmin_data:
+  portainer_data:
 
 
 

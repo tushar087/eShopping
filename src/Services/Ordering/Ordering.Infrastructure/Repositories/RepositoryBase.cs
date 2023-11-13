@@ -80,7 +80,7 @@ namespace Ordering.Infrastructure.Repositories
 
         public async Task UpdateAsync(T entity)
         {
-            _dbContext.Set<T>().Remove(entity);
+            _dbContext.Set<T>().Update(entity);
             await _dbContext.SaveChangesAsync();
         }
     }
