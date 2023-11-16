@@ -15,5 +15,36 @@ Each microservice is using other own database including SQL Server , PostgreSQL,
  - Docker
  - Relational and Non-Relational Database
   
- 
-# Note : Ongoing Project , further changes will be pushed as proceed ahead. 
+### Catalog MicroService include below :
+ - ASP.Net Core Web API application.
+ - Rest API Principles and CRUD operation.
+ - MongoDB NOSQL database connection on docker containerization.
+ - N-layer implementation with Repository pattern.
+ - Swagger Open API implemenation.
+ - Docker File and docker-compose implementation.
+
+
+### Basket Microservices include below :
+- ASP.NET Core Web API application.      
+- Rest API principles, CRUD operation.
+- Redis database connection on docker containerization.
+- Consume Discount Grpc service for inter-service sync communication to calculate product final price.
+- Publish BasketCheckout Queue using MassTransit and RabbitMQ.
+- Swagger Open API implemenation.
+- Docker File and docker-compose implementation.
+
+
+### Ordering Microservices include below:
+- ASP.NET Core Web API application.
+- Implement Domain Driven Design,CQRS and Clean Architecture.
+- Developing CQRS using MediatR,FluentValidation and AutoMapper nuget packages.
+- Consuming RabbitMQ BasketCheckout event queue using MassTransit-RabbitMQ Configuration.
+- SQLServer database and containerization.
+- Swagger Open API implemenation.
+- Docker File and docker-compose implementation.
+
+### API Gateway Ocelot microservice include below:
+- Implement API Gateway with Ocelot.
+- Run multiple different API Gateway / BFF container types.
+- The Gateway aggregator pattern in Shopping.Aggregator.
+- Docker File and docker-compose implementation.
