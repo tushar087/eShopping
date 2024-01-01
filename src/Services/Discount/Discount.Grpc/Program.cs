@@ -1,4 +1,3 @@
-using Discount.Grpc.Extensions;
 using Discount.Grpc.Repositories;
 using Discount.Grpc.Services;
 using Microsoft.AspNetCore.Server.Kestrel.Core;

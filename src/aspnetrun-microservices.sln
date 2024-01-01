@@ -43,7 +43,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.Aggregator", "ApiG
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{6EE7C0D4-E552-4582-A87B-A1E682E5A369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "Identity\IdentityServer\IdentityServer.csproj", "{2F33EB40-EDBF-4193-B461-02A6E80E2AAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "Identity\IdentityServer\IdentityServer.csproj", "{2F33EB40-EDBF-4193-B461-02A6E80E2AAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2F329374-FC28-4B2D-81AC-B046E0D5DCC1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,7 @@
-﻿using IdentityServer4.Models;
+﻿using IdentityModel;
+using IdentityServer4.Models;
+using IdentityServer4.Test;
+using System.Security.Claims;
 
 namespace IdentityServer
 {
@@ -62,6 +65,21 @@ namespace IdentityServer
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     AllowedScopes = {"eshoppinggateway", "basketapi"}
                 }
+        };
+
+        public static List<TestUser> TestUsers => new List<TestUser>
+        {
+            new TestUser
+        {
+                SubjectId="5BE86359-073C-434B-AD2D-A3932222DABE",
+                Username="tushar",
+                Password="system123#",
+                Claims=new List<Claim>
+                {
+                    new Claim(JwtClaimTypes.GivenName,"tushar"),
+                    new Claim(JwtClaimTypes.FamilyName,"beniwal")
+                }
+        }
         };
     }
 }
