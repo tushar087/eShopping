@@ -49,6 +49,11 @@ export class AcntService{
         this.router.navigateByUrl('/');
     }
 
+    public finishLogout = () => {
+        this.user = null;
+        return this.manager.signoutRedirectCallback();
+      }
+      
     public finishlogin = () :Promise<User> =>{
         return this.manager.signinRedirectCallback().then(user=>{
             this.currentUserSource.next(this.checkUser(user));
