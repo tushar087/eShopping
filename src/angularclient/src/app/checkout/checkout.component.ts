@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AcntService } from '../app/account/acnt.service';
-import { IBasket, IBasketItem } from '../app/shared/models/basket';
-import { BasketService } from '../app/basket/basket.service';
+import { BasketService } from '../basket/basket.service';
+import { IBasket, IBasketItem } from '../shared/models/basket';
 
 @Component({
   selector: 'app-checkout',

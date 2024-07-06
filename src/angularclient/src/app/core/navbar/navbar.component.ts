@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { BasketService } from '../../basket/basket.service';
 import { AcntService } from '../../app/account/acnt.service';
-import { IBasketItem } from '../../app/shared/models/basket';
-import { BasketService } from '../../app/basket/basket.service';
+import { IBasketItem } from '../../shared/models/basket';
 
 @Component({
   
